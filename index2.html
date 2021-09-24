@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script >
+			var s = 0;
+			var n;
+
+			n = parseInt(prompt("Nhập số n: "));
+
+			// s = 1 + 2 + 3+ ... +n
+			// s = n + (n - 1) + (n - 2) + .... + 1
+			
+			do{
+				s = s + n;
+				n--;
+
+			}while(n != 0);
+
+			document.write("Ket qua la: " + s);
+		</script>
+</body>
+</html>
