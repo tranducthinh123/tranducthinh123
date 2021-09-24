@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài tập 7</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var m;
+		var n;
+		var k;
+
+		do
+		{
+			m = prompt("Mời bạn nhập giá trị của m: (m<n) ");
+			n = prompt("Mời bạn nhập giá trị của n: (n>m) ");
+			if(n<m)
+			{
+				alert("Bạn phải nhập  lớn hơn n")
+			}
+		}while(n<m);
+		k = prompt("Nhập giá trị của k: ");
+		var s=0;
+		var dem=0;
+		for (var i = m; i<=n; i++) {
+
+			if(i%k==0)
+			{
+			  	s+=i;
+			  	dem++;
+			}
+		}
+		document.write("Có "+dem+" số chia hết cho "+k+" trong đoạn từ "+m+ " đến "+n+" và có tổng S = "+s);
+		</script>
+</body>
+</html>

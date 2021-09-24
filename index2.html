@@ -1,53 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="css/style2.css">
-</head>
-<body>
-	<div class="container">
-		<div class="content">
-			<div class="top">
-				<img src="images/ico_check.gif">
-				<span>Quy định sử dụng</span>
-			</div>
-			<div class="bottom">
-				<img src="images/img_kinhdoanh.gif">
-				<span>Liên hệ kinh doanh</span>
-			</div>
-		</div>
-		<div class="content">
-			<div class="top">
-				<img src="images/ico_check.gif">
-				<span>Hướng dẫn thanh toán</span>
-			</div>
-			<div class="bottom">
-				<img src="images/img_kinhdoanh.gif">
-				<span>Hỗ trợ kĩ thuật</span>
-			</div>
-		</div>
-		<div class="content">
-			<div class="top">
-				<img src="images/ico_check.gif">
-				<span>Download bảng giá</span>
-			</div>
-			<div class="bottom">
-				<img src="images/img_kinhdoanh.gif">
-				<span >Góp ý công ty </span>
-			</div>
-		</div>
-		<div class="content">
-			<div class="top">
-				Sales 1:<br>
-				<img src="images/online.gif">
-			</div>
-			<div class="bottom">
-				Sales 2:<br>
-				<img src="images/offline.gif">
-			</div>
-		</div>
-	</div>
-</body>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>S = 1 + 2 + 3+ ... + n</title>
+	</head>
+	<body>
+		
+		<script >
+			var s = 0;
+			var n;
+
+			n = parseInt(prompt("Nhập số n: "));
+
+			// s = 1 + 2 + 3+ ... +n
+			// s = n + (n - 1) + (n - 2) + .... + 1
+			
+			do{
+				s = s + n;
+				n--;
+
+			}while(n != 0);
+
+			document.write("Ket qua la: " + s);
+		</script>
+	</body>
 </html>

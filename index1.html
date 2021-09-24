@@ -1,41 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-	<div align="center" class="product">
-		<img src="images/1.jpg">
-		<p class="name">Galaxy Tab</p>
-		<p class="price">15.000.000 VNĐ</p> 
-	</div>
-	<div align="center" class="product">
-		<img src="images/2.jpg">
-		<p class="name">Galaxy Tab</p>
-		<p class="price">15.000.000 VNĐ</p>
-	</div>
-	<div align="center" class="product">
-		<img src="images/3.jpg">
-		<p class="name">Galaxy Tab</p>
-		<p class="price">15.000.000 VNĐ</p>
-	</div>
-	<div align="center" class="product">
-		<img src="images/4.jpg">
-		<p class="name">Galaxy Tab</p>
-		<p class="price" >15.000.000 VNĐ</p>
-	</div>
-	<div align="center" class="product">
-		<img src="images/5.jpg" >
-		<p class="name">Galaxy Tab</p>
-		<p class="price">15.000.000 VNĐ</p>
-	</div>
-	<div align="center" class="product">
-		<img src="images/6.jpg">
-		<p class="name">Galaxy Tab</p>
-		<p class="price">15.000.000 VNĐ</p>
-	</div>
-</body>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Đếm số lượng số chia hết cho 3 hoặc 7 trong khoảng 1 đến 100</title>
+	</head>
+	<body>
+		<h1>Các số chia hết cho 3 hoặc 7 trong khoảng 1 - 100</h1>
+		
+		<script type="text/javascript">
+			for(var i = 1; i <= 100; i ++) {
+				if(i % 3 == 0 || i % 7 == 0) {
+					document.write(i + "<br/>");
+				}
+			}
+		</script>
+	</body>
 </html>
