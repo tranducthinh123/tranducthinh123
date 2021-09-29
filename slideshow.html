@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="container">
+		<div class="slide">
+			<img src="images/slide_1.jpg.png" alt="">
+		</div>
+		<div class="slide active">
+		    <img src="images/slide_2.jpg.png" alt="">
+		</div>
+		<div class="slide">
+		    <img src="images/slide_3.jpg.png" alt="">
+		</div>
+		<div class="slide">
+		    <img src="images/slide_4.jpg.png" alt="">
+		</div>
+		<div id="prev" class="btn">
+			<i class="fas fa-chevron-left"></i>
+		</div>
+		<div id="next" class="btn">
+			<i class="fas fa-chevron-right"></i>
+		</div>
+		<div id="content-dot">
+			<div class="dot" onclick="activeDot(1)"></div>
+			<div class="dot" onclick="activeDot(2)"></div>
+			<div class="dot" onclick="activeDot(3)"></div>
+			<div class="dot" onclick="activeDot(4)"></div>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
