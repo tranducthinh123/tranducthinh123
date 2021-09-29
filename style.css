@@ -1,29 +1,51 @@
-.product{
-	font-family: arial; 
-	float: left;
-	margin: 20px;
-	padding: 20px;
-	border: 5px solid #ccc;
-	width: 150px;
-	height: 180px;
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-.product:hover{
-	border: 5px solid orange;
-	width: 150px;
-	height: 180px;
+#container{
+	position: relative;
+	margin: 0 auto;
+	max-width: 1000px;
+}
+#container:hover .btn{
+	display: block;
+}
+.slide{
+	display: none;
+}
+.slide img{
+	width: 100%;
+}
+.btn{
+	position: absolute;
+	top: 45%;
+	font-size: 30px;
+	display: none;
 	cursor: pointer;
 }
-.name{
-	color: black;
+#next{
+	right: 0;
 }
-.name:hover{
-	color: orange;
+.active{
+	display: block;
 }
-.price{
-	color: red;
-	font-weight: bold;
+#content-dot{
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 10px;
+	justify-content: center;
+	width: 100%;
 }
-.price:hover{
-	color: pink;
-	font-weight: bold;
+.dot{
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	background-color: #ccc;
+	margin-left: 5px;
+	cursor: pointer;
+}
+.active-dot{
+	background-color: orange;
 }
